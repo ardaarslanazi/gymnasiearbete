@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "R4NEE9IhwSitwpnwc8iXQN7PgU85hl1f9O7cbfyioY8fYWyb5tTOoAEjBBrwNreGjFITTMk+Mrx6v+O7s1LtOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ardaburc.arslanazi\\Documents\\Programmering\\gymnasiearbete\\gymnasiearbete\\gymnasiearbete.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ardaburc.arslanazi\\.nuget\\packages\\raylib-cs\\3.7.0.1\\raylib-cs.3.7.0.1.nupkg.sha512",
+    "C:\\Users\\ardaburc.arslanazi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
