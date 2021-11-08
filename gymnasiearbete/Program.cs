@@ -14,7 +14,7 @@ namespace gymnasiearbete
             Texture2D fyrkant1 = Raylib.LoadTexture("Michael_fyrkant.png");
             Texture2D cirkel1 = Raylib.LoadTexture("john_rund.png");
             Texture2D triangel2 = Raylib.LoadTexture("shneed_trekant.png");
-            Texture2D fyrkant2 = Raylib.LoadTexture("stanly_fyrkant.png");
+            Texture2D fyrkant2 = Raylib.LoadTexture("stanly_fyrkant_Ny.png");
             Texture2D cirkel2 = Raylib.LoadTexture("randy_rund.png");
             Texture2D triangel3 = Raylib.LoadTexture("trekanty.png");
             Texture2D fyrkant3 = Raylib.LoadTexture("fyrkanty.png");
