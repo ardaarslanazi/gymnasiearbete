@@ -16,6 +16,10 @@ namespace gymnasiearbete
             Texture2D triangel2 = Raylib.LoadTexture("shneed_trekant.png");
             Texture2D fyrkant2 = Raylib.LoadTexture("stanly_fyrkant.png");
             Texture2D cirkel2 = Raylib.LoadTexture("randy_rund.png");
+            Texture2D triangel3 = Raylib.LoadTexture("trekanty.png");
+            Texture2D fyrkant3 = Raylib.LoadTexture("fyrkanty.png");
+            Texture2D cirkel3 = Raylib.LoadTexture("rundy.png");
+
 
             int mouseX = 0;
             int mouseY = 0;
@@ -82,9 +86,9 @@ namespace gymnasiearbete
                 if (scene == 3)
                 {
                     Raylib.DrawText("Vem skulle du låna ut 100 kr till?", 450, 50, 50, Color.BLACK);
-                    Raylib.DrawTextureEx(triangel1, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(fyrkant2, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(cirkel1, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(triangel3, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant3, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel3, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
                     if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
@@ -104,7 +108,7 @@ namespace gymnasiearbete
                     Raylib.DrawText("Vilken tycker du ser mer snäll ut?", 450, 50, 50, Color.BLACK);
                     Raylib.DrawTextureEx(triangel2, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
                     Raylib.DrawTextureEx(fyrkant1, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel3, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
                     if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
@@ -122,8 +126,8 @@ namespace gymnasiearbete
                 if (scene == 5)
                 {
                     Raylib.DrawText("Vilken tycker du ser mer snäll ut?", 450, 50, 50, Color.BLACK);
-                    Raylib.DrawTextureEx(triangel1, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(fyrkant2, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(triangel3, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant1, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
                     Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
@@ -142,9 +146,9 @@ namespace gymnasiearbete
                 if (scene == 6)
                 {
                     Raylib.DrawText("Vem skulle du förlora mot i en frågesport?", 450, 50, 50, Color.BLACK);
-                    Raylib.DrawTextureEx(triangel2, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(fyrkant1, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
-                    Raylib.DrawTextureEx(cirkel1, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(triangel1, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant3, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
                     if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
