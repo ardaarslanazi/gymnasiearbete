@@ -35,6 +35,10 @@ namespace gymnasiearbete
                 {
                     scene++;
                 }
+                if (Raylib.IsKeyPressed(KeyboardKey.KEY_DELETE))
+                {
+                    scene--;
+                }
 
                 Raylib.ClearBackground(Color.WHITE);
 
@@ -151,16 +155,51 @@ namespace gymnasiearbete
                     Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
-                    if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
-                    if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
+                }
+                if (scene == 7)
+                {
+                    Raylib.DrawText("Vem skulle komma sent till ett evenemang ni har planerat?", 250, 50, 50, Color.BLACK);
+                    Raylib.DrawTextureEx(triangel3, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant2, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel1, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+
+
+
+
+                }
+                if (scene == 8)
+                {
+                    Raylib.DrawText("vem frågar du hjälp för matte?", 250, 50, 50, Color.BLACK);
+                    Raylib.DrawTextureEx(triangel2, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant3, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel1, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+
+
+
+
+                }
+                if (scene == 9)
+                {
+                    Raylib.DrawText("Vem frågar du hjälp för att planera idrottslektion?", 250, 50, 50, Color.BLACK);
+                    Raylib.DrawTextureEx(triangel1, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant2, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel3, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+
+
+
+
+                }
+                if (scene == 10)
+                {
+                    Raylib.DrawText("Vem skulle du förlora mot i en löpningstävling?", 250, 50, 50, Color.BLACK);
+                    Raylib.DrawTextureEx(triangel3, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(fyrkant3, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
+                    Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
+
+
+
 
                 }
                 Raylib.EndDrawing();
