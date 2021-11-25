@@ -19,11 +19,23 @@ namespace gymnasiearbete
             Texture2D triangel3 = Raylib.LoadTexture("trekanty.png");
             Texture2D fyrkant3 = Raylib.LoadTexture("fyrkanty.png");
             Texture2D cirkel3 = Raylib.LoadTexture("rundy.png");
+            Texture2D frame = Raylib.LoadTexture("frame.png");
+
 
 
             int mouseX = 0;
             int mouseY = 0;
             int scene = 1;
+            int first = 0;
+            int second = 0;
+            int third = 0;
+            int fourth = 0;
+            int fifth = 0;
+            int sixth = 0;
+            int seventh = 0;
+            int eighth = 0;
+            int ninth = 0;
+            int tenth = 0;
 
             while (!Raylib.WindowShouldClose())
             {
@@ -40,7 +52,64 @@ namespace gymnasiearbete
                     scene--;
                 }
 
+                /*if (scene == 2)
+               {
+                   if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                   {
+                       if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                       {
+                           second++;
+                           scene++;
+
+                       }
+                   }
+               } */
+
+
+                if (scene == 1)
+                {
+                    if ((mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000))
+                    {
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first = 2;
+
+                        }
+                        if (scene == 1)
+                        {
+                            if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                            {
+                                if (Raylib.IsMouseButtonDown(MouseButton.MOUSE_LEFT_BUTTON))
+                                {
+                                    first++;
+                                    scene++;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
                 Raylib.ClearBackground(Color.WHITE);
+
+                if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                {
+                    Raylib.DrawTextureEx(frame, new Vector2(0, 150), 0, 0.62f, Color.WHITE);
+
+
+                }
+                if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
+                {
+                    Raylib.DrawTextureEx(frame, new Vector2(600, 150), 0, 0.62f, Color.WHITE);
+
+                }
+                if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
+                {
+                    Raylib.DrawTextureEx(frame, new Vector2(1200, 150), 0, 0.62f, Color.WHITE);
+
+
+                }
+
 
                 if (scene == 1)
                 {
@@ -52,41 +121,109 @@ namespace gymnasiearbete
                     Raylib.DrawTextureEx(cirkel1, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
+                    if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000 && scene == 1)
+                    {
+                        if (Raylib.IsMouseButtonDown(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first++;
+                            scene++;
+                            Raylib.ClearBackground(Color.WHITE);
+
+                        }
+                    }
+
 
                     if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
                     {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
+                        if (Raylib.IsMouseButtonDown(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first = 2;
+                            scene++;
 
+                        }
                     }
                     if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
                     {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first = 3;
+                            scene++;
 
+                        }
                     }
+
+
+
+
 
                 }
                 if (scene == 2)
                 {
+
                     Raylib.DrawText("Vem skulle du förlora mot i en stavningstävling?", 450, 50, 50, Color.BLACK);
                     Raylib.DrawTextureEx(triangel2, new Vector2(0, 200), 0, 0.25f, Color.WHITE);
                     Raylib.DrawTextureEx(fyrkant2, new Vector2(600, 200), 0, 0.25f, Color.WHITE);
                     Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
+                    if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000 && scene == 2)
+                    {
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first++;
+                            scene++;
 
+                        }
+                    }
 
 
                     if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
                     {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first = 2;
+                            scene++;
 
+                        }
                     }
                     if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
                     {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            first = 3;
+                            scene++;
 
+                        }
                     }
 
+
+
+
+
+
+                    /*if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
+                    {
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            second = 2;
+                            scene++;
+
+                        }
+                    }
+                    if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
+                    {
+                        if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                        {
+                            second = 3;
+                            scene++;
+
+                        }
+                    } */
+
                 }
+
+
+
+
                 if (scene == 3)
                 {
                     Raylib.DrawText("Vem skulle du låna ut 100 kr till?", 450, 50, 50, Color.BLACK);
@@ -95,16 +232,7 @@ namespace gymnasiearbete
                     Raylib.DrawTextureEx(cirkel3, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
-                    if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
-                    if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
-
-                    }
 
                 }
                 if (scene == 4)
@@ -115,16 +243,9 @@ namespace gymnasiearbete
                     Raylib.DrawTextureEx(cirkel3, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
-                    if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
-                    if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
+
 
                 }
                 if (scene == 5)
@@ -135,16 +256,7 @@ namespace gymnasiearbete
                     Raylib.DrawTextureEx(cirkel2, new Vector2(1200, 200), 0, 0.25f, Color.WHITE);
 
 
-                    if (mouseX >= 600 && mouseX <= 1200 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
 
-                    }
-                    if (mouseX >= 1300 && mouseX <= 1800 && mouseY >= 100 && mouseY <= 1000)
-                    {
-                        Raylib.DrawText("gaming", 100, 100, 50, Color.BLACK);
-
-                    }
 
                 }
                 if (scene == 6)
@@ -201,10 +313,132 @@ namespace gymnasiearbete
 
 
 
+
                 }
+                /*     if (scene == 1)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                first++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 2)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                second++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 3)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                third++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 4)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                fourth++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 5)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                fifth++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 6)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                sixth++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 7)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                seventh++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 8)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                eighth++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 9)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                ninth++;
+                                scene++;
+
+                            }
+                        }
+                    }
+                    if (scene == 10)
+                    {
+                        if (mouseX >= 0 && mouseX <= 600 && mouseY >= 100 && mouseY <= 1000)
+                        {
+                            if (Raylib.IsMouseButtonPressed(MouseButton.MOUSE_LEFT_BUTTON))
+                            {
+                                tenth++;
+                                scene++;
+
+                            }
+                        }
+                    } */
                 Raylib.EndDrawing();
             }
 
         }
     }
+
 }
